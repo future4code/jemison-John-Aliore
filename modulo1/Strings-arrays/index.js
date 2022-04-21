@@ -107,19 +107,27 @@
         e) Remova da lista o item de índice que o usuário escolheu.
         
         f) Imprima o array no console */
-let listaDeTarefas = [] = prompt("Por favor digite 3 tarefas que voçê precise realizar durante o dia")
-console.log(listaDeTarefas)
+      
+    
+/*         let tarefa1 = Array(prompt("primeira tarefa do dia"))
+        
+        let tarefa2 = Array (prompt("segunda tarefa do dia"))
+        
+        let tarefa3 = Array (prompt("terceira tarefa do dia"))
+        
 
-console.log(listaDeTarefas[0])
-console.log(listaDeTarefas[1])
-console.log(listaDeTarefas[2])
+      console.log(tarefa1,tarefa2,tarefa3)
 
-let realizado = prompt("De 1 a 3 qual voçê ja realizou?")
-console.log(realizado-1)
-romovido = listaDeTarefas
+      let indice = Array("1","2","3",)
+        
+    
+      console.log(indice.length)
+      let pergunta = prompt ("Digite agora de 1 á 3 uma tarefa concluida")
+      let retorno = indice[pergunta-1]
+      
+      console.log(retorno)
+      
+      indice.splice = pergunta
 
-
-
-
-
-
+      console.log(indice) */br
+      
