@@ -104,7 +104,16 @@ return resultado
 // EXERCÍCIO 08
 function checaStringsMesmoTamanho(string1, string2) {
   // implemente sua lógica aqui
-
+  let tamanhoString1 = prompt("Digite palavras que contenham o mesmo tamanho")
+  let tamanhoString2  =  prompt("Digite palavras que contenham o mesmo tamanho")
+  
+  let resultado = tamanhoString1.length === tamanhoString2.length
+  
+  console.log(tamanhoString1.length)
+  console.log(tamanhoString2.length)
+  console.log(resultado)
+  
+  return resultado
 
 }
 
@@ -119,24 +128,27 @@ return primeiroItem
 // EXERCÍCIO 10
 function retornaUltimoElemento(array) {
   // implemente sua lógica aqui
-let ultimoElemento = array[1]
-
-return ultimoElemento
-
+return array.pop()
 }
 
 // EXERCÍCIO 11
 function trocaPrimeiroEUltimo(array) {
   // implemente sua lógica aqui
-array.pop(1)
-array.push(0)
+
+
 }
+
+
 
 // EXERCÍCIO 12
 function checaIgualdadeDesconsiderandoCase(string1, string2) {
   // implemente sua lógica aqui
-return !false
+let results = string1.toLowerCase()
+let results2 = string2.toLowerCase()
+  
+console.log(results,results2)
 
+  return results === results2
 
 
 }
@@ -144,7 +156,16 @@ return !false
 // EXERCÍCIO 13
 function checaRenovacaoRG() {
   // implemente sua lógica aqui
+let anoAtual =   prompt(`Digite o seu ano atual`)
+let anoDeNascimento = prompt(`Digite o seu ano de nascimento`)
+let anoDeIdentidade =  prompt(`Digite o ano em que sua identidade foi emitida`)
 
+let idadeMinima =  (anoDeNascimento-anoAtual)
+let anoMinimo = (anoDeIdentidade-anoAtual)
+
+let resoloção = idadeMinima<=-20&&anoMinimo<=-5&&idadeMinima>=-20&&anoMinimo>=-10||idadeMinima<=-50&&anoMinimo>=-15
+console.log(resoloção)
+return 
 }
 
 // EXERCÍCIO 14
