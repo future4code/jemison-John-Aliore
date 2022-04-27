@@ -107,19 +107,3 @@
         e) Remova da lista o item de índice que o usuário escolheu.
         
         f) Imprima o array no console */
-let listaDeTarefas = [] = prompt("Por favor digite 3 tarefas que voçê precise realizar durante o dia")
-console.log(listaDeTarefas)
-
-console.log(listaDeTarefas[0])
-console.log(listaDeTarefas[1])
-console.log(listaDeTarefas[2])
-
-let realizado = prompt("De 1 a 3 qual voçê ja realizou?")
-console.log(realizado-1)
-romovido = listaDeTarefas
-
-
-sssss
-
-
-
