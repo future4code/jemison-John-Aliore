@@ -4,10 +4,10 @@ Esse repositório vai acompanhar vocês até o final do curso, para mantermos a 
 
 ```
 .
-├── modulo1
-│   ├── nome-da-aula
-│   ├── nome-da-aula
-│   └── nome-do-projeto
+├── modulo1                                     Bloco 2
+│   ├── conhecendo o computador                   variaveis
+│   ├── aula de git
+│   └── Projeto de Fixação: Readme no VS Code
 |
 ├── modulo2
 │   ├── nome-da-aula
