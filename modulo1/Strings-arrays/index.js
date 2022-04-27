@@ -107,20 +107,3 @@
         e) Remova da lista o item de índice que o usuário escolheu.
         
         f) Imprima o array no console */
-
-
-      //console.log(tarefa1,tarefa2,tarefa3)
-
-      //let indice = Array("1","2","3",)
-        
-    
-      /* console.log(indice.length)
-      let pergunta = prompt ("Digite agora de 1 á 3 uma tarefa concluida")
-      let retorno = indice[pergunta-1]
-      
-      console.log(retorno)
-      
-      indice.splice = pergunta
-
-      console.log(indice) */
-      
