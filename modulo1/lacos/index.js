@@ -75,45 +75,65 @@ while(quantidadeAtual < quantidadeTotal){
 
        // 2. Considere que você tenha acesso a um `array`  (chamado de 'array original') que é composto somente de números. 
        //Baseando-se nisso, crie uma função para cada um dos itens abaixo, realizando as operações pedidas:
-    let arrayOriginal = [10,23,33,40,50]
+    /* let arrayOriginal = [10,23,33,40,50] */
 
        // a) Escreva um programa que **imprime** cada um dos valores do array original.
-        for(let elemento of arrayOriginal){
+        /* for(let elemento of arrayOriginal){
             console.log(elemento)
-        }
+        } */
        //b) Escreva um programa que **imprime** cada um dos valores do array original divididos por 10
         
-      for(let elemento of arrayOriginal){
+      /* for(let elemento of arrayOriginal){
           console.log(elemento/10)
-      } 
+      }  */
         // c) Escreva um programa que **crie** um novo array contendo, somente,
        // os números pares do array original e **imprima** esse novo array
         
-       for(let elemento of arrayOriginal.splice(1,2)){
-           console.log(arrayOriginal)
-       }
+       //for(let elemento of arrayOriginal.splice(1,2)){
+       //    console.log(arrayOriginal)
+       //}
        //d) Escreva um programa que **crie** um novo array contendo strings,
         // da seguinte forma: "O elemento do índex `i` é: `numero`". Depois, **imprima** este novo array.
-        for(let elemento of arrayOriginal){
+     /*    for(let elemento of arrayOriginal){
 
-            console.log()
+            console.log(`O elemento do índex 0 é ${arrayOriginal[0]}`)
+            console.log(`O elemento do índex 1 é ${arrayOriginal[1]}`)
+            console.log(`O elemento do índex 2 é ${arrayOriginal[2]}`)
+            console.log(`O elemento do índex 3 é ${arrayOriginal[3]}`)
+            console.log(`O elemento do índex 4 é ${arrayOriginal[4]}`)
 
 
-        }
-        
-        
-        
-        
-        
-        
-        
-        
-        
+        } */
         //e) Escreva um programa que imprima no console o maior e o menor números contidos no array original
 
+        
+        /* let arrayOriginal = [10,23,33,40,50]
 
+        function imprimirMaior(array){
+            let maior = 0
+            let elemento = 0
+            for(let i = 0; i < array.length ; i++){
+            elemento = array[i]
+            if (elemento > maior){
+                maior = elemento
+            }    
+        }
+        return maior   
+}
+function imprimirMenor(array){
 
-
+let menor = 10
+for(let elemento of array){
+    if (elemento<menor){
+        menor = elemento
+    }
+}
+return menor
+}
+console.log(imprimirMenor(arrayOriginal))
+console.log(imprimirMaior(arrayOriginal))
+console.log(`O maior número é ${imprimirMaior(arrayOriginal)} e o menor é ${imprimirMenor(arrayOriginal)}`) */
+        
 
 
 
