@@ -53,27 +53,63 @@ while(quantidadeAtual < quantidadeTotal){
 
 /* 1. Pergunte ao usuário quantos bichinhos de estimação ele tem e guarde esse dado em uma variável. 
  */   
-let zero = 0 
-let qtdDePet = Number(prompt(`Olá quantos Pet's você tem?`))
+//let zero = 0 
+//let qtdDePet = Number(prompt(`Olá quantos Pet's você tem?`))
 //a) Se a quantidade for 0, imprima no console "Que pena! Você pode adotar um pet!"
-if(qtdDePet<=zero){
-    alert(`Que pena,adote um!!!`)
+//if(qtdDePet<=zero){
+   // alert(`Que pena,adote um!!!`)
 
-console.log (`${qtdDePet}`<= zero ,`Que pena,adote um`)}
+//console.log (`${qtdDePet}`<= zero ,`Que pena,adote um`)}
 
     //b) Se a quantidade for maior que 0, solicite que o usuário digite os nomes deles, 
     //um por um, e guarde esses nomes em um array
-     else if(qtdDePet>0){alert`Digite o(s) nome(s) do(s)Pet(s)`
+    //c) Por fim, imprima o array com os nomes dos bichinhos no console */ 
+   /* else if(qtdDePet>zero){alert`Digite o(s) nome(s) do(s)Pet(s)`
 }
-        let numeroDePet = qtdDePet+zero
-         
-      
-
-    
-    
-    //c) Por fim, imprima o array com os nomes dos bichinhos no console */
+        while(zero<qtdDePet){
+            let nomeDosBichos = Array(prompt("Digite o nome do pet"));
+            console.log(nomeDosBichos)
+            zero++
+        }*/
 
 
+       // 2. Considere que você tenha acesso a um `array`  (chamado de 'array original') que é composto somente de números. 
+       //Baseando-se nisso, crie uma função para cada um dos itens abaixo, realizando as operações pedidas:
+    let arrayOriginal = [10,23,33,40,50]
+
+       // a) Escreva um programa que **imprime** cada um dos valores do array original.
+        for(let elemento of arrayOriginal){
+            console.log(elemento)
+        }
+       //b) Escreva um programa que **imprime** cada um dos valores do array original divididos por 10
+        
+      for(let elemento of arrayOriginal){
+          console.log(elemento/10)
+      } 
+        // c) Escreva um programa que **crie** um novo array contendo, somente,
+       // os números pares do array original e **imprima** esse novo array
+        
+       for(let elemento of arrayOriginal.splice(1,2)){
+           console.log(arrayOriginal)
+       }
+       //d) Escreva um programa que **crie** um novo array contendo strings,
+        // da seguinte forma: "O elemento do índex `i` é: `numero`". Depois, **imprima** este novo array.
+        for(let elemento of arrayOriginal){
+
+            console.log()
+
+
+        }
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        //e) Escreva um programa que imprima no console o maior e o menor números contidos no array original
 
 
 
