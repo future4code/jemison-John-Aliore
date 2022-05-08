@@ -10,10 +10,10 @@
  * 
  * 
  */
-/* let querJogar = (`Olá vamos jogar 21?`)
+ /* let querJogar = (`Olá vamos jogar 21?`)
 if(confirm("Olá vamos jogar 21?")){
 }
-   else{ 
+   else{
       console.log("O jogo acabou.")
    
 }
@@ -34,10 +34,11 @@ let pontuacaoPC = cartaPC.valor + cartaPC1.valor
        if(pontuacaoUsuario>pontuacaoPC){
           console.log(`!!!O usuário ganhou!!!`)
        }else if(pontuacaoUsuario<pontuacaoPC)
+       
        console.log(`!!!A maquina ganhou!!!`)
       
        else if(pontuacaoPC === pontuacaoUsuario)
-       console.log(`!!!EMPATE!!!`)} */
+       console.log(`!!!EMPATE!!!`)} */ 
 
        // DESAFIO
      
