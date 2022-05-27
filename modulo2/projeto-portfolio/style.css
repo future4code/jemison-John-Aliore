@@ -1,0 +1,14 @@
+p{
+    color: blue;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+body{background-image: linear-gradient(to right ,rgb(180, 175, 178),rgb(201, 92, 201));}</style>
+
+    p{
+        color: blue;
+        font-size: 20px;
+    }
+nav{
+position: absolute;
+top:0%
+};
