@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+header {
+    display: grid;
+    grid-template-columns: 90% 10%;
+background-color: blue;
+    padding: 10px 20px;
+}
+#titulo{
+    padding: 5px 60px;
+    
+    border-radius: 100px;
+
+    width: 100px;
+    
+    font-size: 30px;
+
+    background-color: yellowgreen;
+}
+#search {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 10px;
+
+    width: 100px;
+    
+    font-size: 14px;
+
+    background-color: yellowgreen;
+}
+
+
+.container {
+    display: grid;
+    grid-template-columns: 150px 2fr 90px;
+    background-color: yellow;
+}
+
+nav {
+    display: grid;
+    grid-template-rows: repeat(5, 30px);
+
+    margin-left: 10px;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+}
+
+section {
+    margin: 10px auto;
+    border: 20px solid yellowgreen;
+    padding: 5px;
+    width: 200px;
+}
+#Paisagem:hover{
+    margin: -15px;
+    border: 0px solid yellowgreen;
+    padding: 0px 5px;
+    width: 200px;
+    height: 200px;
+
+}
+#space:hover{
+    margin: -15px;
+    border: 0px solid yellowgreen;
+    padding: 0px 5px;
+    width: 200px;
+    height: 200px;
+
+}
+img {
+    width: 100%;
+}
+
+p {
+    text-align: center;
+    font-weight: bold;
+}
+
+
+footer {
+    display: grid;  
+    justify-items: center;
+
+    padding: 10px 0;
+    
+    background-color: greenyellow;
+
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
