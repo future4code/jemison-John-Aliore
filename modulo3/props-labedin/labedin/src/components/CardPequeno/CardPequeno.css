@@ -1,0 +1,26 @@
+.CardPequeno {
+    display: grid;
+    align-items: center;
+    border: 1px solid black;
+    padding: 20px 10px;
+    margin-bottom: 3px;
+    height: 100px;
+    width: 700px;
+}
+
+.CardPequeno > img {
+    width: 70px;
+    margin-right: 10px;
+    border-radius: 50%;
+}
+
+.CardPequeno h4 {
+    margin-bottom: 15px;
+}
+
+.CardPequeno> div {
+    display: grid;
+    position: relative;
+    top:-50px;
+    justify-items: center;
+}
