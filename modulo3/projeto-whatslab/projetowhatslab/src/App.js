@@ -1,19 +1,10 @@
-import react from 'react';
-import EnviarMsg from './components/ComponenteMsg';
-
-
+import {Corpo} from './Components/ComponenteMSG/ComponenteMsg';
 
 
 
 function WhatsLab() {
-return (
-<div classNamePai='Pai'>
-  <EnviarMsg/>
-
-
-</div>
-)
+return<Corpo/>;
 
 }
 
-export default WhatsLab
+export default WhatsLab;
