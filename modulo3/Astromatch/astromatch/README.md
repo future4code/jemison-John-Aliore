@@ -5,7 +5,7 @@ Sobre
 Terceiro projeto de fixação do módulo de React.js da Labenu:https://www.labenu.com.br/.
 
 Deploy do App:
-
+glamorous-hole.surge.sh
 
 Implementação
 O projeto possui as seguintes funcionalidades:
