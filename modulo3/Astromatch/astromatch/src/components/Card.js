@@ -1,19 +1,19 @@
 import React,{useState,useEffect} from "react";
 import axios from "axios";
-
-
-
-
-
-
+import './Card.css'
+import { BsFillHeartFill} from "react-icons/bs";
+import { GiBrokenHeart } from "react-icons/gi";
 
 function Card() {
 
     const [cardPessoa,setcardPessoa] = useState({})
 
+
+    const url = 'https://us-central1-missao-newton.cloudfunctions.net/astroMatch/:johnwillian-aliore-jemison/person'
+
+
     const cardPerfil = () =>{
-        axios
-        .get(`${'https://us-central1-missao-newton.cloudfunctions.net/astroMatch/:aluno/person'}/person`)
+        axios.get(url)
         .then((response) =>{
             console.log(response.data)
             setcardPessoa(response.data.profile)
@@ -25,15 +25,16 @@ function Card() {
     useEffect(() =>{
         cardPerfil()
     }, [])
-
-     const selectCard = (choice) =>{
+const url2 = 'https://us-central1-missao-newton.cloudfunctions.net/astroMatch/johnwillian-aliore-jemison/choose-person'
+     
+const selectCard = (choice) =>{
          const body = {
           id:cardPessoa.id,
           choice:choice,           
 
          }
         axios
-        .post(`${'https://us-central1-missao-newton.cloudfunctions.net/astroMatch/:aluno/choose-person'}/choose-person`, body)
+        .post(url2, body)
         .then((response) =>{
             selectCard()
         })
@@ -45,8 +46,8 @@ function Card() {
 
   
       const curtirpessoa = () =>{
-
         selectCard(true)
+        
       }
 
       const rejeitarpessoa = () =>{
@@ -60,17 +61,17 @@ function Card() {
            
             <img src={cardPessoa.photo} alt='foto de perfil'/>
             
-            <div className="container2">
-                <section> {cardPessoa.name},{cardPessoa.age}</section>
+             
+            
+            </div>
+            <spam> {cardPessoa.name},</spam><spam>{cardPessoa.age}</spam>
                 <div> {cardPessoa.bio} </div>
-            </div>
-            </div>
             <div className="botao">
-                <button onClick={curtirpessoa}><img src ={''} /></button>
-                <button onClick={rejeitarpessoa}><img src ={''} /></button>
+                <button onClick={curtirpessoa}> <BsFillHeartFill/> </button>
+                <button onClick={rejeitarpessoa}> <GiBrokenHeart/> </button>
             </div>
-
-    </div>
+            </div>
+    
 
     )
 }
@@ -78,4 +79,4 @@ function Card() {
 
 
 
-export default Card
+export default Card;
