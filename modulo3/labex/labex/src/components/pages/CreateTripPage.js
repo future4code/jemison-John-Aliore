@@ -1,16 +1,21 @@
 import React from "react";
-
+import {useNavigate} from 'react-router-dom';
 
 
 
 function CreateTripPage (){
-
+    
+    const navigate = useNavigate();
+      const backToHome = () =>{
+        navigate("/")
+      }
+      
     return(
-        <>
+        
         <p>
-            oi
+           <button onClick={ backToHome }>home</button> 
         </p>
-        </>
+        
     )
 }
 

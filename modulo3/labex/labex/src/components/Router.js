@@ -1,4 +1,5 @@
 import React from "react";
+import { BrowserRouter, Route, Routes,} from 'react-router-dom';
 import AdmHomePage from "./pages/AdminHomePage";
 import AppFormPage from "./pages/ApplicationFormPage";
 import CreateTripPage from "./pages/CreateTripPage";
@@ -10,11 +11,9 @@ import TripDPage from "./pages/TripDetailsPage";
 
 
 
-
-
-
 export function Rotas() {
     return (
+        
       <BrowserRouter>
           <Routes>
               <Route index element={ <HomePage /> } />
@@ -24,8 +23,9 @@ export function Rotas() {
               <Route path='admin/trips/list' element={<AdmHomePage/>} />
               <Route path='admin/trips/creat' element={<CreateTripPage/>} />
               <Route path='admin/trips/:id' element={<TripDPage/>} />
-              <Route path='*' element={<Erro/>}/>
+             
           </Routes>
       </BrowserRouter>
+      
     );
   }
