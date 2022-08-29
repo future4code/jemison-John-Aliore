@@ -7,32 +7,35 @@ import {useRequestData} from '../hook/useRequestData'
 
 function ListTripPage (){
 
-const [viagens,isLoadingLista,erro] = useRequestData(`${BASE_URL}trips`)
+const [viagens,isLoadingLista,] = useRequestData(`${BASE_URL}trips`)
 
 const listaDviagens = viagens && viagens.trips.map((item) =>{
   return( 
   <div>
+ 
   <p>{item.name}</p>
-   <p>{item.descripton}</p>
-   <p>{item.durationsInDays}</p>
+  <p>{item.planet}</p>
    <p>{item.date}</p>
+   <p>{item.description}</p>
+   <p>{item.durationInDays}</p>
    </div>)
 })
+console.log()
 
     const navigate = useNavigate();
 const goToAppForm = () =>{
   navigate("/trips/application")
 }
-const goToHome = () =>{
-  navigate("/")
+const backPage = () =>{
+  navigate(-1)
 }
     return(
         
-        <p>
-                  <h1>ListTripPage</h1>
+        <div>
+                  <h1>Lista de Viagens</h1>
                   
-     <button onClick={ goToAppForm }>ApplicationForm</button>
-     <button onClick={goToHome}>Home</button>
+     <button onClick={ goToAppForm }>Candidata-se a uma viagem</button>
+     <button onClick={backPage}>Voltar</button>
         
 
 
@@ -42,7 +45,7 @@ const goToHome = () =>{
 {!isLoadingLista&& viagens&&viagens.trips.length === 0 && <p> Não ha Usuarios</p>}
 
 
-</p>
+</div>
         
     )
 }

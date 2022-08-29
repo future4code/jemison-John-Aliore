@@ -26,22 +26,6 @@ right:10px;
 `
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 function HomePage (){
 
     const navigate = useNavigate();
@@ -59,7 +43,7 @@ function HomePage (){
         <Container>
         <Title>Viagens para o Espaço</Title>
      <ButtonTrip onClick={ goToAdmPag }>Login</ButtonTrip>
-     <ButtonLogin onClick={goToListTrip}>ListTrips</ButtonLogin>
+     <ButtonLogin onClick={goToListTrip}>Lista de Viagens</ButtonLogin>
       
             
         </Container>

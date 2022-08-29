@@ -4,7 +4,7 @@ import axios from "axios";
 
 
 
-export function useRequestData (url) {
+export function useRequestData (url,headers) {
 
 const[viagens,setViagens] = useState(undefined)
 
