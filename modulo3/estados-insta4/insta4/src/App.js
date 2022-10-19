@@ -1,6 +1,9 @@
-import React from 'react';
-import styled from 'styled-components'
-import Post from './components/Post/Post';
+import React   from 'react';
+import { Tela } from './Components/Tela';
+
+
+function App() {
+   return <Tela />;
 
 const MainContainer = styled.div`
   display: flex;
@@ -35,7 +38,7 @@ function App() {
         </MainContainer>
 
     )
-}
 
+}
 
 export default App;
